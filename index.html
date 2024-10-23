@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Golf Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>GreenGolf</h1>
+        </div>
+        <div class="cart">
+            <button id="cart-button">Cart (<span id="cart-count">0</span>)</button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h2>Premium Eco-Friendly Golf Equipment</h2>
+        <p>Elevate your game with sustainable golf gear</p>
+    </section>
+
+    <section class="products">
+        <div class="product-list" id="product-list">
+            <!-- Produkter vil blive indlæst dynamisk her -->
+        </div>
+    </section>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Your Cart</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: $<span id="total-price">0.00</span></p>
+            <button id="checkout">Checkout</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
